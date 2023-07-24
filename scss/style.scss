@@ -16,3 +16,26 @@ body{
     margin: 0;
     overflow-x: hidden;
 }
+
+.navigation{
+
+align-items: flex-start;
+background: 0 0;
+display: flex;
+z-index: 99;
+width: 100vw;
+max-width: 100%;
+position: relative;
+  margin: 0 auto;
+
+    .menu-wrapper{
+        display:flex;
+        align-items: center;
+        max-width: 1920px;
+        padding: 2rem 3rem;
+        width: 100%;
+        min-height: 56px;
+    
+    }
+}
+
