@@ -17,88 +17,24 @@ body{
     overflow-x: hidden;
 }
 
-.navigation{
-
-align-items: flex-start;
-background: 0 0;
-display: flex;
-z-index: 99;
-width: 100vw;
-max-width: 100%;
-position: relative;
-  margin: 0 auto;
+.navigation {
+    align-items: flex-start;
+    background: 0 0;
+    display: flex;
+    z-index: 99;
+    width: 100vw;
+    max-width: 100%;
+    position: relative;
+    margin: 0 auto;
 
     .menu-wrapper{
         display:flex;
         align-items: center;
         max-width: 1920px;
-        padding: 3rem 3rem;
+        padding: 2rem 3rem;
         width: 100%;
         min-height: 56px;
- 
-    }
-    .Hostinger-link{
-        align-items: center;
-        display: flex;
-        flex-grow: 1;
-    }
-    .logo{
-        display: inline;
-    }
-    .img-size{
-        width: 147px;
-        height: 30px;
-    }
-    .lithuania-link{
-        display: flex;
-        align-items: center;
-        padding: 0px 20px;
-    }
-
-    .lithuania-img{
-        display: flex;
-    }
-    .lt-img{
-        height: 30px;
-        width:60px;    
-    }
-    .lithuania-span{
-        font-weight: 700;
-        margin-left: 4px;
-    }
-}
-
-.nav-menu{
-    display:flex;
-    align-items: center;
-    padding-left: 16px;
-    position: relative;
-    text-align: right;
-    padding-left: 16px;
     
-    ul{
-        display: flex;
-        padding: 12px;
-    }
-    li{
-        padding: 12px;
-        list-style: none;
-    }
-    a{
-        color: black;
-        text-decoration: none;
-        
-    }
-    .button{
-        $button-color:#1d1e20;        
-        border: 2px solid black;
-        border-radius: 0.2rem;
-        width: 120px;
-        height: 60px;
-        font-weight: 700;
-        font-size: 17px;
-
     }
 }
-
 
