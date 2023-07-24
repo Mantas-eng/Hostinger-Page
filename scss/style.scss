@@ -1,0 +1,18 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+@import "_media.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 100%;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
