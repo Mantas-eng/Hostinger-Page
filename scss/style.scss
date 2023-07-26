@@ -66,7 +66,7 @@ body{
 }
 
 .main-text{
-  color: #2f1c6a;
+  color: $btn-color;
 }
 .nav-menu {
     display: flex;
@@ -165,7 +165,7 @@ main {
   height: 64px;
   justify-content: center;
   width: 64px;
-  border: 2px solid #2f1c6a;
+  border: 2px solid $btn-color;
 }
 .value{
   font-size: 18px;
@@ -181,7 +181,7 @@ main {
   margin: 20px 0px;
   width: 300px;
   background-color:$btn-color;
-  background: linear-gradient(to top, #392389 0%, #6140bc 100%);
+  background:$linear-gradient;
   color: white;
   border-radius: 0.3rem;
   border: none;
@@ -190,8 +190,7 @@ main {
   align-items: center;
 }
 .btn:hover{
-background-color: grey;
-
+ color: $btn-color;
 }
 span{
   color: $btn-color;
@@ -212,7 +211,7 @@ span{
   padding-top: 200px;
   display: flex;
   justify-content: center;
-}
+
 
 .card-container{
   display: flex;
@@ -238,9 +237,11 @@ span{
     text-decoration: none;
     color: black;
   }
+  
   .widget-container{
     display: flex;
   }
+  
   span{
     color:$text-color;
   }
@@ -253,16 +254,18 @@ span{
     justify-content: center;
     width: 100%;
   }
+
   .google{
     margin-top: 20px;
   }
   .stars-container{
     display: flex;
-    margin-bottom:6px;
+    margin-bottom:20px;
   }
   .icon-success{
     fill:$icon-color;
   }
+  
 .star-img{
   margin-bottom: 14px;
   align-items: center;
@@ -283,3 +286,20 @@ span{
     margin: 0 0 8px;
 }
 
+}
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .content-text{
+    width: 100%;
+    color: $btn-color;
+  }
+  .content-p{
+    margin-top: 32px;
+    text-align: center;
+    color: $btn-color;
+  }
+
+} 

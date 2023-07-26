@@ -186,7 +186,7 @@ main {
 }
 
 .btn:hover {
-  background-color: grey;
+  color: #2f1c6a;
 }
 
 span {
@@ -210,80 +210,79 @@ span {
   display: flex;
   justify-content: center;
 }
-
-.card-container {
+.cards .card-container {
   display: flex;
   justify-content: space-evenly;
 }
-
-.cards-container {
+.cards .cards-container {
   display: flex;
   gap: 10px;
   margin: 0 0 8px;
 }
-
-.logo-container img {
+.cards .logo-container img {
   width: 30%;
   margin: 0 0 8px;
 }
-
-.trustscore-widget::after {
+.cards .trustscore-widget::after {
   content: "|";
   margin: 0 2px;
 }
-
-.trustscore-widget a {
+.cards .trustscore-widget a {
   text-decoration: none;
   color: black;
 }
-
-.widget-container {
+.cards .widget-container {
   display: flex;
 }
-
-span {
+.cards span {
   color: rgb(27, 27, 27);
 }
-
-.reviews {
+.cards .reviews {
   margin: 0 2px;
 }
-
-.star-container {
+.cards .star-container {
   display: flex;
   justify-content: center;
   width: 100%;
 }
-
-.google {
+.cards .google {
   margin-top: 20px;
 }
-
-.stars-container {
+.cards .stars-container {
   display: flex;
-  margin-bottom: 6px;
+  margin-bottom: 20px;
 }
-
-.icon-success {
+.cards .icon-success {
   fill: #00b090;
 }
-
-.star-img {
+.cards .star-img {
   margin-bottom: 14px;
   align-items: center;
   display: flex;
   height: 24px;
 }
-
-.star-img img {
+.cards .star-img img {
   width: 55%;
 }
-
-.card-star img {
+.cards .card-star img {
   width: 40%;
 }
-
-.star-container {
+.cards .star-container {
   display: flex;
   margin: 0 0 8px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .content-text {
+  width: 100%;
+  color: #2f1c6a;
+}
+.content .content-p {
+  margin-top: 32px;
+  text-align: center;
+  color: #2f1c6a;
 }/*# sourceMappingURL=style.css.map */
