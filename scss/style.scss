@@ -15,6 +15,9 @@ html{
 body{
     margin: 0;
     overflow-x: hidden;
+    color: $btn-color;
+    font-weight: 400;
+    line-height: 24px;
 }
 
 .navigation {
@@ -301,5 +304,223 @@ span{
     text-align: center;
     color: $btn-color;
   }
+ 
+}
+.grid{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 540px;
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
+  .pricing-table{
+    border: 1px solid #d5dfff;
+    border-radius: 4px;
+  }
+  .mainPage{
+    display: grid;
+    
+  }
+  .single-price{
+    margin-top: 32px;
+  }
 
+.table-payment{
+  text-align: center;
+}
+  .mainPageFeature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .pricingtable-Feature{
+    padding: 32px 24px 0;
+  }
+  .left-side{
+    display: flex;
+    justify-content: space-between;
+  }
+  .left-side:not(:last-child){
+    margin-bottom: 12px;
+  }
+  .plan-feature{
+    display: flex;
+    justify-content: space-between;
+  }
+  .plan-feature-content{
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .feature-content{
+    flex-shrink: 0;
+    margin-right: 8px;
+  }
+  .feature-tool{
+    align-items: center;
+    cursor:pointer;
+    display: flex;
+  }  
 } 
+.center{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.renewal{
+  color: #727586;
+  margin-top: 16px;
+}
+
+.addTo-Card{
+  margin-top: 24px;
+  max-width: 248px;
+  width: 100%;
+}
+.title{
+  font-size: 24px;
+  text-align: center;
+  color: $btn-color;
+  font-weight: bold;
+}
+.product{
+align-items: center;
+display: flex;
+flex-direction: column;
+margin-top: 24px;
+width: 100%;
+}
+.price-number{
+  font-size: 48px;
+}
+.title{
+  text-align: center;
+}
+.discount{
+  margin-top: 24px;
+}
+.discount-tag{
+  background-color: #cbe4ff;
+  border-radius: 20px;
+  padding: 4 12px;
+  display: inline;
+}
+.productInfo{
+  opacity: .8;
+  text-align: center;
+}
+.productDescription{
+  margin-top: 8px;
+  color:$btn-color;
+}
+.button-primary{
+  align-items: center;
+  background-color: #673de6;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  line-height: 1;
+  min-height: 48px;
+  padding: 12px 16px;
+  position: relative;
+  text-align: center;
+  transition: .3s ease-in-out;
+  width: 100%;
+}
+.single-price{
+  margin-top: 16px;
+  text-align: center;
+}
+.About-us{
+  padding-bottom: 32px;
+  padding-top: 32px;
+  .payment-terms{
+    text-align: center;
+    
+  }
+  
+  .description{
+    font-size: 16px;
+    text-align: center;
+  }
+  .heading{
+    font-size: 36px;
+    font-weight:normal;
+  }
+  span{
+    font-weight: 700;
+  }
+}
+
+
+@media(min-width:1025px){
+  .grid{
+    column-gap: 24px;
+    max-width: 1208px;
+    .h-grid--cols-d-3{
+      grid-template-columns: repeat(3,1fr);
+    }
+    .center{
+      border-left:1px solid #d5dfff;
+      padding-right: 0;
+    }
+    .mainPageFeature{
+      margin-left:57px;
+    }
+    .mainPageFeature:first-child{
+      display: flex;
+      margin-left: 0;
+      margin-right: 57px;
+      }
+      .center{
+        border-right: 1px solid #d5dfff;
+        padding-right: 24px;
+       }
+       .center{
+        border-left:1px solid #d5dfff;
+        padding-left: 24px;
+       }
+
+       .description{
+        margin-top: 32px;
+       }
+
+       .About-us{
+        padding-bottom: 48px;
+        padding-top: 48px;
+       }
+
+  }
+    
+  
+  @media(min-width:768px){
+    .grid{
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+   .h-grid--cols-t-2{
+    grid-template-columns: repeat(2,1fr);
+   }
+   .product{
+    margin-top: 8px;
+   }
+   .description{
+    margin-top: 24px;
+   }
+   .About-us{
+    padding-bottom: 40px;
+    padding-top: 40px;
+   }
+  }
+}
+
+  
+
+
+
