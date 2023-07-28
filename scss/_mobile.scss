@@ -1,0 +1,157 @@
+@media screen and (max-width: 600px) {
+    .lithuania-link {
+        display: none; 
+    }
+    .lt-img{
+      display: none;
+    }
+    .lithuania-span{
+      display: none;
+    }
+    .wrapper{
+      text-align: center;
+    }
+    main{
+    flex-direction: column;
+    }
+      .img-wrapper img{
+    width: 100%;      
+      }
+  .cards{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content-text{
+    text-align: center;
+  }
+  }
+  @media(min-width:768px){
+  
+    .lithuania-link{
+      display: none;
+    }
+  h1{
+    line-height: 48px;
+  }
+    .feature-text{
+      font-size: 28px;
+      line-height: 40px;
+    }
+    .grid{
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  
+    .mobile{
+      flex-direction: row;
+      justify-content: center;
+    }
+    .mobile a:nth-child(3){
+      display: block;
+    }
+    .img-card img {
+      width: 320px;
+    }
+   .h-grid--cols-t-2{
+    grid-template-columns: repeat(2,1fr);
+   }
+   .product{
+    margin-top: 8px;
+   }
+   .description{
+    margin-top: 24px;
+   }
+   .About-us{
+    padding-bottom: 40px;
+    padding-top: 40px;
+   }
+  
+  .menu-wrapper{
+  min-height: 62px;
+  padding: 16px 20px;
+  }
+  .nav-menu{
+  display: flex;
+  }
+  
+  
+  
+  
+  @media(min-width: 1025px){
+    
+    main{
+      display: flex;
+    }
+    .feature-text{
+      font-size: 36px;
+    }
+    }
+   .lithuania-link{
+    display: flex;
+   }
+     .lt-img {
+      height: 30px;
+      width: 60px;
+      display: block;
+    }
+     .lithuania-span {
+      display: block;
+      font-weight: 700;
+      margin-left: 4px;
+    }
+   .mainmenuBar{
+    display: none;
+   }
+  
+    .grid{
+      column-gap: 24px;
+      max-width: 1008px;
+      .h-grid--cols-d-3{
+        grid-template-columns: repeat(3,1fr);
+      }
+     
+      .center{
+        border-left:1px solid #d5dfff;
+        padding-right: 0;
+      }
+      .mainPageFeature{
+        margin-left:57px;
+      }
+      .mainPageFeature:first-child{
+        display: flex;
+        margin-left: 0;
+        margin-right: 57px;
+        }
+        .center{
+          border-right: 1px solid #d5dfff;
+          padding-right: 24px;
+         }
+         .center{
+          border-left:1px solid #d5dfff;
+          padding-left: 24px;
+         }
+  
+         .description{
+          margin-top: 32px;
+         }
+  
+         .About-us{
+          padding-bottom: 48px;
+          padding-top: 48px;
+         }
+         
+         .img-card img{
+          width: 550px;
+         }
+        .img-section-wrapper a:nth-child(3){
+          display: block;
+          
+        }
+       .menu-wrapper{
+        min-height: 88px;
+        padding: 20px 40px;
+       }
+         
+  }
+  }

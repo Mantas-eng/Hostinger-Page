@@ -1,3 +1,148 @@
+@media screen and (max-width: 600px) {
+  .lithuania-link {
+    display: none;
+  }
+  .lt-img {
+    display: none;
+  }
+  .lithuania-span {
+    display: none;
+  }
+  .wrapper {
+    text-align: center;
+  }
+  main {
+    flex-direction: column;
+  }
+  .img-wrapper img {
+    width: 100%;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content-text {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .lithuania-link {
+    display: none;
+  }
+  h1 {
+    line-height: 48px;
+  }
+  .feature-text {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .grid {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .mobile {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .mobile a:nth-child(3) {
+    display: block;
+  }
+  .img-card img {
+    width: 320px;
+  }
+  .h-grid--cols-t-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product {
+    margin-top: 8px;
+  }
+  .description {
+    margin-top: 24px;
+  }
+  .About-us {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+  .menu-wrapper {
+    min-height: 62px;
+    padding: 16px 20px;
+  }
+  .nav-menu {
+    display: flex;
+  }
+}
+@media (min-width: 768px) and (min-width: 1025px) {
+  main {
+    display: flex;
+  }
+  .feature-text {
+    font-size: 36px;
+  }
+}
+@media (min-width: 768px) {
+  .lithuania-link {
+    display: flex;
+  }
+  .lt-img {
+    height: 30px;
+    width: 60px;
+    display: block;
+  }
+  .lithuania-span {
+    display: block;
+    font-weight: 700;
+    margin-left: 4px;
+  }
+  .mainmenuBar {
+    display: none;
+  }
+  .grid {
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+    max-width: 1008px;
+  }
+  .grid .h-grid--cols-d-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid .center {
+    border-left: 1px solid #d5dfff;
+    padding-right: 0;
+  }
+  .grid .mainPageFeature {
+    margin-left: 57px;
+  }
+  .grid .mainPageFeature:first-child {
+    display: flex;
+    margin-left: 0;
+    margin-right: 57px;
+  }
+  .grid .center {
+    border-right: 1px solid #d5dfff;
+    padding-right: 24px;
+  }
+  .grid .center {
+    border-left: 1px solid #d5dfff;
+    padding-left: 24px;
+  }
+  .grid .description {
+    margin-top: 32px;
+  }
+  .grid .About-us {
+    padding-bottom: 48px;
+    padding-top: 48px;
+  }
+  .grid .img-card img {
+    width: 550px;
+  }
+  .grid .img-section-wrapper a:nth-child(3) {
+    display: block;
+  }
+  .grid .menu-wrapper {
+    min-height: 88px;
+    padding: 20px 40px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -31,7 +176,7 @@ body {
   display: flex;
   align-items: center;
   max-width: 1920px;
-  padding: 3rem 3rem;
+  padding: 10px 16px;
   width: 100%;
   min-height: 56px;
 }
@@ -52,9 +197,6 @@ body {
   align-items: center;
   padding: 0px 20px;
 }
-.navigation .lithuania-img {
-  display: flex;
-}
 .navigation .lt-img {
   height: 30px;
   width: 60px;
@@ -64,12 +206,17 @@ body {
   margin-left: 4px;
 }
 
+h1 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
 .main-text {
   color: #2f1c6a;
 }
 
 .nav-menu {
-  display: flex;
+  display: none;
   align-items: center;
   padding-left: 16px;
   position: relative;
@@ -99,6 +246,14 @@ body {
   align-items: center;
   justify-content: center;
 }
+.nav-menu .mainmenuBar {
+  display: flex;
+  align-items: center;
+}
+.nav-menu .mobile-menu-burger {
+  cursor: pointer;
+  display: inline-block;
+}
 
 main {
   display: flex;
@@ -115,8 +270,8 @@ main {
   margin-bottom: 20px;
 }
 .wrapper .feature-text {
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 32px;
   color: #2f1c6a;
 }
 .wrapper .price-currency {
@@ -435,6 +590,8 @@ span {
 .About-us {
   padding-bottom: 32px;
   padding-top: 32px;
+  display: flex;
+  flex-direction: column;
 }
 .About-us .payment-terms {
   text-align: center;
@@ -444,18 +601,163 @@ span {
   text-align: center;
 }
 .About-us .heading {
-  font-size: 36px;
-  font-weight: normal;
+  font-weight: bold;
+  text-align: center;
 }
 .About-us span {
   font-weight: 700;
 }
+.About-us .link-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.About-us .ul-links {
+  margin-top: 50px;
+  justify-content: center;
+}
+.About-us .ul-links ul {
+  display: flex;
+  padding-bottom: 14px;
+}
+.About-us .ul-links ul li {
+  padding: 16px 24px 15px;
+  list-style-type: none;
+}
+.About-us .ul-links ul li a {
+  color: #2f1c6a;
+  text-decoration: none;
+}
 
-@media (min-width: 1025px) {
+.tab-section {
+  display: inline-flex;
+}
+
+.img-section-wrapper {
+  align-items: center;
+  display: flex;
+  min-width: 100%;
+  flex-direction: column;
+}
+
+.img-section-wrapper a:nth-child(3) {
+  display: none;
+}
+
+.img-card {
+  cursor: pointer;
+  display: block;
+  height: auto;
+  margin: 0 12px 24px;
+  width: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Apply the following styles for screens larger than 600px */
+@media screen and (max-width: 600px) {
+  .lithuania-link {
+    display: none; /* Hide the "
+Lithuania link" on phones */
+  }
+  .lt-img {
+    display: none;
+  }
+  .lithuania-span {
+    display: none;
+  }
+  .wrapper {
+    text-align: center;
+  }
+  main {
+    flex-direction: column;
+  }
+  .img-wrapper img {
+    width: 100%;
+  }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content-text {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .lithuania-link {
+    display: none;
+  }
+  h1 {
+    line-height: 48px;
+  }
+  .feature-text {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .grid {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .mobile {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .mobile a:nth-child(3) {
+    display: block;
+  }
+  .img-card img {
+    width: 320px;
+  }
+  .h-grid--cols-t-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product {
+    margin-top: 8px;
+  }
+  .description {
+    margin-top: 24px;
+  }
+  .About-us {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+  .menu-wrapper {
+    min-height: 62px;
+    padding: 16px 20px;
+  }
+  .nav-menu {
+    display: flex;
+  }
+}
+@media (min-width: 768px) and (min-width: 1025px) {
+  main {
+    display: flex;
+  }
+  .feature-text {
+    font-size: 36px;
+  }
+}
+@media (min-width: 768px) {
+  .lithuania-link {
+    display: flex;
+  }
+  .lt-img {
+    height: 30px;
+    width: 60px;
+    display: block;
+  }
+  .lithuania-span {
+    display: block;
+    font-weight: 700;
+    margin-left: 4px;
+  }
+  .mainmenuBar {
+    display: none;
+  }
   .grid {
     -moz-column-gap: 24px;
          column-gap: 24px;
-    max-width: 1208px;
+    max-width: 1008px;
   }
   .grid .h-grid--cols-d-3 {
     grid-template-columns: repeat(3, 1fr);
@@ -487,23 +789,14 @@ span {
     padding-bottom: 48px;
     padding-top: 48px;
   }
-}
-@media (min-width: 1025px) and (min-width: 768px) {
-  .grid {
-    padding-left: 40px;
-    padding-right: 40px;
+  .grid .img-card img {
+    width: 550px;
   }
-  .h-grid--cols-t-2 {
-    grid-template-columns: repeat(2, 1fr);
+  .grid .img-section-wrapper a:nth-child(3) {
+    display: block;
   }
-  .product {
-    margin-top: 8px;
-  }
-  .description {
-    margin-top: 24px;
-  }
-  .About-us {
-    padding-bottom: 40px;
-    padding-top: 40px;
+  .grid .menu-wrapper {
+    min-height: 88px;
+    padding: 20px 40px;
   }
 }/*# sourceMappingURL=style.css.map */
