@@ -6,7 +6,6 @@
     <title>Hostinger</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="./scss/style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans:ital,wght@0,500;0,600;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
 </head>
@@ -25,21 +24,21 @@
                             <span class="lithuania-span">Lietuvių</span>
                         </div>
                     </div>
-                        <div class="nav-menu">
+                        <div class="nav-menu hidden">
                             <ul>
                                 <li><a href="#">WordPress</a></li>
                                 <li><a href="#">Svetainiu kurimas</a></li>
                                 <li><a href="#">Hostingas</a>
-                                <span class="item-icon">
-                                    <i class="fa-solid fa-chevron-down"></i>                                
-                                </span>
+                               
                                 </li>   
                                 <li><a href="#">Domenai</a></li>
+                                <button class="button">Prisijungti</button>
                             </ul>
-                            <button class="button">Prisijungti</button>
+                            
                         </div>
+                         
                         <div class="mainmenuBar">
-                            <svg data-v-165629f9="" data-v-f8dbf21a="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-label="burger" role="presentation" class="mobile-menu-burger h-icon-dark" style="width: 24px; height: 24px;"><g data-v-165629f9=""><path data-v-165629f9="" d="M2 5V7H22V5H2ZM2 11V13H22V11H2ZM2 17V19H22V17H2Z"></path></g></svg>
+                            <svg id="burgerMenu" data-v-165629f9="" data-v-f8dbf21a="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-label="burger" role="presentation" class="mobile-menu-burger h-icon-dark" style="width: 24px; height: 24px;"><g data-v-165629f9=""><path data-v-165629f9="" d="M2 5V7H22V5H2ZM2 11V13H22V11H2ZM2 17V19H22V17H2Z"></path></g></svg>
                         </div>
             </div>
         </div>
@@ -184,7 +183,7 @@
                     <div class="plan-feature">
                         <div class="plan-feature-content">
                         <div class="feature-content">
-                            <svg data-v-165629f9="" data-v-0be99a4e="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 24" aria-label="check" role="presentation" class="h-icon-success" style="width: 12px; height: 24px;"><g data-v-165629f9=""><path data-v-165629f9="" d="M12 8.758a.694.694 0 0 1-.217.515l-5.605 5.485-1.053 1.03A.725.725 0 0 1 4.6 16a.724.724 0 0 1-.527-.212l-1.053-1.03-2.803-2.743A.694.694 0 0 1 0 11.5c0-.202.072-.374.217-.515l1.053-1.03a.725.725 0 0 1 .526-.213c.207 0 .382.071.527.213L4.6 12.19l5.078-4.977c.14-.14.33-.216.527-.212.206 0 .382.07.526.212l1.053 1.03c.142.134.22.321.217.516Z"></path></g></svg>
+                            <svg data-v-165629f9="" data-v-0be99a4e="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 24" aria-label="check" role="presentation" class="d-icon-success" style="width: 12px; height: 24px;"><g data-v-165629f9=""><path data-v-165629f9="" d="M12 8.758a.694.694 0 0 1-.217.515l-5.605 5.485-1.053 1.03A.725.725 0 0 1 4.6 16a.724.724 0 0 1-.527-.212l-1.053-1.03-2.803-2.743A.694.694 0 0 1 0 11.5c0-.202.072-.374.217-.515l1.053-1.03a.725.725 0 0 1 .526-.213c.207 0 .382.071.527.213L4.6 12.19l5.078-4.977c.14-.14.33-.216.527-.212.206 0 .382.07.526.212l1.053 1.03c.142.134.22.321.217.516Z"></path></g></svg>
                         </div>
                         <div class="featureContent-text">
                             <b>Nemokamas</b>
@@ -213,7 +212,7 @@
             <div class="plan-feature">
                 <div class="plan-feature-content">
                 <div class="feature-content">
-                    <svg data-v-165629f9="" data-v-0be99a4e="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 24" aria-label="check" role="presentation" class="h-icon-success" style="width: 12px; height: 24px;"><g data-v-165629f9=""><path data-v-165629f9="" d="M12 8.758a.694.694 0 0 1-.217.515l-5.605 5.485-1.053 1.03A.725.725 0 0 1 4.6 16a.724.724 0 0 1-.527-.212l-1.053-1.03-2.803-2.743A.694.694 0 0 1 0 11.5c0-.202.072-.374.217-.515l1.053-1.03a.725.725 0 0 1 .526-.213c.207 0 .382.071.527.213L4.6 12.19l5.078-4.977c.14-.14.33-.216.527-.212.206 0 .382.07.526.212l1.053 1.03c.142.134.22.321.217.516Z"></path></g></svg>
+                    <svg data-v-165629f9="" data-v-0be99a4e="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 24" aria-label="check" role="presentation" class="f-icon-success" style="width: 12px; height: 24px;"><g data-v-165629f9=""><path data-v-165629f9="" d="M12 8.758a.694.694 0 0 1-.217.515l-5.605 5.485-1.053 1.03A.725.725 0 0 1 4.6 16a.724.724 0 0 1-.527-.212l-1.053-1.03-2.803-2.743A.694.694 0 0 1 0 11.5c0-.202.072-.374.217-.515l1.053-1.03a.725.725 0 0 1 .526-.213c.207 0 .382.071.527.213L4.6 12.19l5.078-4.977c.14-.14.33-.216.527-.212.206 0 .382.07.526.212l1.053 1.03c.142.134.22.321.217.516Z"></path></g></svg>
                 </div>
                 <div class="featureContent-text">
                     <b>El. komercijos</b>
@@ -415,31 +414,8 @@ Patikimas
                 <hr>
             </div>
         </div>
-     <div class="tab-section">
-        <div class="img-section-wrapper mobile">
-            <a href="#">
-                <div class="img-card">
-                    <img src="./img/blick-template-thumbnail-2x-ef2c97.webp"  alt="">
-                </div>
-            </a>
-            <a href="#">
-                <div class="img-card">
-                    <img class="img-card" src="./img/blick-template-thumbnail-2x-ef2c97.webp"  alt="">
-                </div>
-            </a>
-            <a class="samsung"href="#">
-                <div class="img-card">
-                    <img class="img-card" src="./img/HeroImg-ALpj8eJNe2UzLvwz.avif">
-                </div>
-            </a>
-            <a href="#">
-                <div class="img-card">
-                    <img src="./img/presson-template-thumbnail-2x-5540d6.webp" alt="">
-                </div>
-            </a>
-            </div>
-     </div>
     </section>
     </main> 
+    <script src="script.js"></script>
 </body>
 </html>

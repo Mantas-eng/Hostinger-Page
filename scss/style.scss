@@ -1,34 +1,36 @@
 @import "_mixins.scss";
 @import "_variables.scss";
 @import "_media.scss";
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-family: 'DM Sans', sans-serif;
-    font-size: 100%;
+html {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 100%;
 }
-body{
-    margin: 0;
-    overflow-x: hidden;
-    color: $btn-color;
-    font-weight: 400;
-    line-height: 24px;
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: $btn-color;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .navigation {
-    align-items: flex-start;
-    background: 0 0;
-    display: flex;
-    z-index: 99;
-    width: 100vw;
-    max-width: 100%;
-    position: relative;
-    margin: 0 auto;
-  
+  align-items: flex-start;
+  background: 0 0;
+  display: flex;
+  z-index: 99;
+  width: 100vw;
+  max-width: 100%;
+  position: relative;
+  margin: 0 auto;
+
   .menu-wrapper {
     display: flex;
     align-items: center;
@@ -37,74 +39,81 @@ body{
     width: 100%;
     min-height: 56px;
   }
-   .Hostinger-link {
+
+  .Hostinger-link {
     align-items: center;
     display: flex;
     flex-grow: 1;
-   }
-   .logo {
+  }
+
+  .logo {
     display: inline;
     margin-left: 24px;
-   }
-   .img-size {
+  }
+
+  .img-size {
     width: 147px;
     height: 30px;
   }
-   .lithuania-link {
-    display: flex;  
+
+  .lithuania-link {
+    display: flex;
     align-items: center;
     padding: 0px 20px;
   }
-  
-   .lt-img {
+
+  .lt-img {
     height: 30px;
     width: 60px;
-   
+
   }
-   .lithuania-span {
+
+  .lithuania-span {
     font-weight: 700;
     margin-left: 4px;
-   
+
   }
 
 }
-h1{
+
+h1 {
   font-size: 32px;
   line-height: 40px;
 }
-.main-text{
+
+.main-text {
   color: $btn-color;
 }
-.nav-menu {
-    display: none;
-    align-items: center;
-    padding-left: 16px;
-    position: relative;
-    text-align: right;
-    padding-left: 16px;
 
-   ul {
+.nav-menu {
+  display: none;
+  align-items: center;
+  padding-left: 16px;
+  position: relative;
+  text-align: right;
+  padding-left: 16px;
+
+  ul {
     display: flex;
     padding: 12px;
-  } 
+  }
 
-   li {
+  li {
     padding: 12px;
     list-style: none;
-}
-   a {
+  }
+
+  a {
     color: black;
     text-decoration: none;
-}
- 
-  .button 
-  {
+  }
+
+  .button {
     border-radius: 4px;
     border: none;
     color: #fff;
     line-height: 1;
     min-height: 48px;
-    width: 120px;
     font-weight: 700;
     padding: 12px 16px;
     display: flex;
@@ -114,70 +123,80 @@ h1{
 
   }
 
-  .mainmenuBar{
+  .mainmenuBar {
     display: flex;
     align-items: center;
   }
-.mobile-menu-burger{
-  cursor: pointer;
-  display: inline-block;
+
+  .mobile-menu-burger {
+    cursor: pointer;
+    display: inline-block;
+  }
+
 }
- 
-}
+
 main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-} 
+}
 
-  .wrapper{
-    display: grid;
-    padding: 20px 100px;
-    width: 100%;
-      
-    .feature-menu{
-      margin-bottom: 20px;
-    }
-    .feature-text{
-      font-size: 24px;
-      line-height: 32px;
-      color: $btn-color;
-    }
-    .price-currency{
-      display: inline-flex;
-      align-items: baseline;
-    }
-      .price-number{
-        font-size: 48px;
-        line-height: 56px;
-        font-weight: bold;
-        margin: 10px;
-        color: $btn-color;
-      }
-      .price-month{
-        color: $btn-color;
-      }
-      .price-currency{
-        color: $btn-color;
-        display:inline-flex;
-      }
-      .price-free{
-        font-size: 17px;
-        color: $btn-color;
-        font-weight: bold;
-      }
-    
-    }
-.countdown-wrapper{
-  display: inline-flex;
-  
+.wrapper {
+  padding: 20px 100px;
+
+
+  .feature-menu {
+    margin-bottom: 20px;
+  }
+
+  .feature-text {
+    font-size: 24px;
+    line-height: 32px;
+    color: $btn-color;
+  }
+
+  .price-currency {
+    display: inline-flex;
+    align-items: baseline;
+  }
+
+  .price-number {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: bold;
+    margin: 10px;
+    color: $btn-color;
+  }
+
+  .price-month {
+    color: $btn-color;
+  }
+
+  .price-currency {
+    color: $btn-color;
+    display: inline-flex;
+  }
+
+  .price-free {
+    font-size: 17px;
+    color: $btn-color;
+    font-weight: bold;
+  }
+
 }
-.boxes{
+
+.countdown-wrapper {
+  display: inline-flex;
+
+}
+
+.boxes {
   display: inline-flex;
 }
-.box{
+
+.box {
   align-items: center;
-  background:#fff;
+  background: #fff;
   border-radius: 6px;
   display: flex;
   font-size: 30px;
@@ -187,21 +206,23 @@ main {
   width: 64px;
   border: 2px solid $btn-color;
 }
-.value{
+
+.value {
   font-size: 18px;
   margin: 16px 4px 0;
 }
-.img-guarantee{
+
+.img-guarantee {
   width: 20px;
   height: 20px;
 }
 
-.btn{
+.btn {
   padding: 15px 20px;
   margin: 20px 0px;
   width: 300px;
-  background-color:$btn-color;
-  background:$linear-gradient;
+  background-color: $btn-color;
+  background: $linear-gradient;
   color: white;
   border-radius: 0.3rem;
   border: none;
@@ -209,121 +230,145 @@ main {
   justify-content: center;
   align-items: center;
 }
-.btn:hover{
- color: $btn-color;
-}
-span{
+
+.btn:hover {
   color: $btn-color;
 }
+
+span {
+  color: $btn-color;
+}
+
 .img-wrapper {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  flex: 1; 
+  flex: 1;
 }
 
 
 .img-wrapper img {
-  max-height: 500px; 
+  max-height: 500px;
 }
-.cards{
-  padding-bottom: 100px;
-  padding-top: 200px;
+
+.logo-container {
+  text-align: center;
+}
+
+.cards {
   display: flex;
   justify-content: center;
 
 
-.card-container{
-  display: flex;
-  justify-content: space-evenly;
+  .card-container {
+    display: flex;
+    justify-content: space-evenly;
 
-}
-  
-.cards-container{
-  display: flex;
-  gap: 10px;
-  margin: 0 0 8px;
-}
-  .logo-container img{
+  }
+
+  .cards-container {
+    display: flex;
+    gap: 10px;
+    margin: 0 0 8px;
+  }
+
+  .logo-container img {
     width: 30%;
     margin: 0 0 8px;
   }
-  
-  .trustscore-widget::after{
+
+  .trustscore-widget::after {
     content: "|";
     margin: 0 2px;
   }
+
   .trustscore-widget a {
     text-decoration: none;
     color: black;
   }
-  
-  .widget-container{
+
+  .widget-container {
     display: flex;
   }
-  
-  span{
-    color:$text-color;
+
+  span {
+    color: $text-color;
   }
-  .reviews{
+
+  .reviews {
     margin: 0 2px;
   }
 
-  .star-container{
+  .star-container {
     display: flex;
     justify-content: center;
     width: 100%;
   }
 
-  .google{
+  .google {
     margin-top: 20px;
   }
-  .stars-container{
+
+  .stars-container {
     display: flex;
-    margin-bottom:20px;
+    margin-bottom: 20px;
   }
-  .icon-success{
-    fill:$icon-color;
+
+  .icon-success {
+    fill: $icon-color;
   }
-  
-.star-img{
-  margin-bottom: 14px;
-  align-items: center;
-  display: flex;
-  height: 24px;
-}
-.star-img img{
-  width: 55%;
 
-}
-.card-star img{
-  width: 40%;
-  
-}
+  svg.d-icon-success {
+    fill: green;
+  }
 
-.star-container{
-  display: flex;
+  .feature-content {
+    fill: $icon-color;
+  }
+
+  .star-img {
+    margin-bottom: 14px;
+    align-items: center;
+    display: flex;
+    height: 24px;
+  }
+
+  .star-img img {
+    width: 55%;
+
+  }
+
+  .card-star img {
+    width: 40%;
+
+  }
+
+  .star-container {
+    display: flex;
     margin: 0 0 8px;
-}
+  }
 
 }
-.content{
+
+.content {
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  .content-text{
+
+  .content-text {
     width: 100%;
     color: $btn-color;
   }
-  .content-p{
+
+  .content-p {
     margin-top: 32px;
     text-align: center;
     color: $btn-color;
   }
- 
+
 }
-.grid{
+
+.grid {
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -332,108 +377,130 @@ span{
   padding-left: 16px;
   padding-right: 16px;
   width: 100%;
-  .pricing-table{
+
+  .pricing-table {
     border: 1px solid #d5dfff;
     border-radius: 4px;
   }
-  .mainPage{
+
+  .mainPage {
     display: grid;
-    
+
   }
-  .single-price{
+
+  .single-price {
     margin-top: 32px;
   }
 
-.table-payment{
-  text-align: center;
-}
-  .mainPageFeature{
+  .table-payment {
+    text-align: center;
+  }
+
+  .mainPageFeature {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .pricingtable-Feature{
+
+  .pricingtable-Feature {
     padding: 32px 24px 0;
   }
-  .left-side{
+
+  .left-side {
     display: flex;
     justify-content: space-between;
   }
-  .left-side:not(:last-child){
+
+  .left-side:not(:last-child) {
     margin-bottom: 12px;
   }
-  .plan-feature{
+
+  .plan-feature {
     display: flex;
     justify-content: space-between;
   }
-  .plan-feature-content{
+
+  .plan-feature-content {
     display: flex;
     justify-content: flex-start;
     text-align: left;
   }
-  .feature-content{
+
+  .feature-content {
     flex-shrink: 0;
     margin-right: 8px;
   }
-  .feature-tool{
+
+  .feature-tool {
     align-items: center;
-    cursor:pointer;
+    cursor: pointer;
     display: flex;
-  }  
-} 
-.center{
+  }
+}
+
+.center {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.renewal{
+
+.renewal {
   color: #727586;
   margin-top: 16px;
 }
 
-.addTo-Card{
+.addTo-Card {
   margin-top: 24px;
   max-width: 248px;
   width: 100%;
 }
-.title{
+
+.title {
   font-size: 24px;
   text-align: center;
   color: $btn-color;
   font-weight: bold;
 }
-.product{
-align-items: center;
-display: flex;
-flex-direction: column;
-margin-top: 24px;
-width: 100%;
+
+.product {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  width: 100%;
 }
-.price-number{
+
+.price-number {
   font-size: 48px;
 }
-.title{
+
+.title {
   text-align: center;
 }
-.discount{
+
+.discount {
   margin-top: 24px;
 }
-.discount-tag{
+
+.discount-tag {
   background-color: #cbe4ff;
   border-radius: 20px;
   padding: 4 12px;
   display: inline;
 }
-.productInfo{
+
+.productInfo {
   opacity: .8;
   text-align: center;
 }
-.productDescription{
+
+.productDescription {
   margin-top: 8px;
-  color:$btn-color;
+  color: $btn-color;
 }
-.button-primary{
+
+.button-primary {
   align-items: center;
   background-color: #673de6;
   border: none;
@@ -450,70 +517,77 @@ width: 100%;
   transition: .3s ease-in-out;
   width: 100%;
 }
-.single-price{
+
+.single-price {
   margin-top: 16px;
   text-align: center;
 }
-.About-us{
+
+.About-us {
   padding-bottom: 32px;
   padding-top: 32px;
   display: flex;
   flex-direction: column;
-  .payment-terms{
+
+  .payment-terms {
     text-align: center;
-    
+
   }
-  
-  .description{
+
+  .description {
     font-size: 16px;
     text-align: center;
   }
-  .heading{
-    font-weight:bold;
+
+  .heading {
+    font-weight: bold;
     text-align: center;
   }
-  span{
+
+  span {
     font-weight: 700;
   }
 
-  .link-wrapper{
-   
-    display:flex;
+  .link-wrapper {
+
+    display: flex;
     justify-content: center;
   }
-  .ul-links{
+
+  .ul-links {
     margin-top: 50px;
     justify-content: center;
   }
-  .ul-links ul{
-   display: flex;
 
-   padding-bottom: 14px;
+  .ul-links ul {
+    display: flex;
+
+    padding-bottom: 14px;
   }
+
   .ul-links ul li {
     padding: 16px 24px 15px;
     list-style-type: none;
   }
-  .ul-links ul li a{
-    color:$btn-color;
+
+  .ul-links ul li a {
+    color: $btn-color;
     text-decoration: none;
   }
 }
 
-.tab-section{
-  display: inline-flex;
-}
 .img-section-wrapper {
   align-items: center;
   display: flex;
-  min-width: 100%;
   flex-direction: column;
 }
-.img-section-wrapper a:nth-child(3){
+
+.img-section-wrapper a:nth-child(3) {
   display: none;
 }
-.img-card{
-  cursor:pointer;
+
+.img-card {
+  cursor: pointer;
   display: block;
   height: auto;
   margin: 0 12px 24px;
@@ -524,175 +598,239 @@ width: 100%;
 
 @media screen and (max-width: 600px) {
   .lithuania-link {
-      display: none;
-  }
-  .lt-img{
     display: none;
   }
-  .lithuania-span{
+
+  .About-us .ul-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-section-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(x, 1fr));
+    gap: 10px;
+  }
+
+  .mainmenuBar {
+    width: 20%
+  }
+
+
+  .lt-img {
     display: none;
   }
-  .wrapper{
+
+  .lithuania-span {
+    display: none;
+  }
+
+  .wrapper {
+    padding: 20px 16px;
     text-align: center;
   }
-  main{
-  flex-direction: column;
+
+  main {
+    flex-direction: column;
   }
-    .img-wrapper img{
-  width: 100%;      
-    }
-.cards{
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.content-text{
-  text-align: center;
-}
+
+  .img-wrapper img {
+    width: 80%;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-text {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .logo-container {
+    width: 100%;
+  }
+
+  .cards .cards-container {
+    display: flex;
+    gap: 10px;
+    margin: 0 0 8px;
+  }
 }
 
-@media(min-width:768px){
-.mainPageFeature{
-  display: none;
-}
-  .pricingtable-Feature{
+@media(min-width:768px) {
+  .mainPageFeature {
+    display: none;
+  }
+
+  .button {
+    padding: 1px 2px;
+  }
+
+  .img-wrapper img {
+    max-height: 220px;
+  }
+
+  .pricingtable-Feature {
     margin-bottom: 40px;
     padding: 40px 24px 0;
   }
-  .lithuania-link{
+
+  .lithuania-link {
     display: none;
   }
-h1{
-  line-height: 48px;
-}
-  .feature-text{
+
+  h1 {
+    line-height: 48px;
+  }
+
+  .feature-text {
     font-size: 28px;
     line-height: 40px;
   }
-  .grid{
+
+  .grid {
     padding-left: 40px;
     padding-right: 40px;
   }
 
-  .mobile{
+  .mobile {
     flex-direction: row;
     justify-content: center;
   }
-  .mobile a:nth-child(3){
+
+  .mobile a:nth-child(3) {
     display: block;
   }
+
   .img-card img {
     width: 320px;
   }
- .h-grid--cols-t-2{
-  grid-template-columns: repeat(2,1fr);
- }
- .product{
-  margin-top: 8px;
- }
- .description{
-  margin-top: 24px;
- }
- .About-us{
-  padding-bottom: 40px;
-  padding-top: 40px;
- }
 
-.menu-wrapper{
-min-height: 62px;
-padding: 16px 20px;
-}
-.nav-menu{
-display: flex;
-min-height: 62px;
-padding: 16px 20px;
-}
+  .h-grid--cols-t-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-@media(min-width: 1025px){
-  
-  main{
+  .product {
+    margin-top: 8px;
+  }
+
+  .description {
+    margin-top: 24px;
+  }
+
+  .About-us {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .menu-wrapper {
+    min-height: 62px;
+    padding: 16px 20px;
+  }
+
+  .nav-menu {
+    display: flex;
+    min-height: 62px;
+    padding: 16px 20px;
+  }
+
+  @media(min-width: 1025px) {
+
+    main {
+      display: flex;
+    }
+
+    .feature-text {
+      font-size: 36px;
+    }
+  }
+
+  .lithuania-link {
     display: flex;
   }
-  .feature-text{
-    font-size: 36px;
-  }
-  }
- .lithuania-link{
-  display: flex;
- }
-   .lt-img {
+
+  .lt-img {
     height: 30px;
     width: 60px;
     display: block;
   }
-   .lithuania-span {
+
+  .lithuania-span {
     display: block;
     font-weight: 700;
     margin-left: 4px;
   }
- .mainmenuBar{
-  display: none;
- }
 
-  .grid{
+  .mainmenuBar {
+    display: none;
+  }
+
+  .grid {
     column-gap: 24px;
     max-width: 1008px;
-    .h-grid--cols-d-3{
-      grid-template-columns: repeat(3,1fr);
+
+    .h-grid--cols-d-3 {
+      grid-template-columns: repeat(3, 1fr);
     }
-   
-    .center{
-      border-left:1px solid #d5dfff;
+
+    .center {
+      border-left: 1px solid #d5dfff;
       padding-right: 0;
     }
-    .mainPageFeature{
-      margin-left:57px;
+
+    .mainPageFeature {
+      margin-left: 57px;
     }
-    .mainPageFeature:first-child{
+
+    .mainPageFeature:first-child {
       display: flex;
       margin-left: 0;
       margin-right: 57px;
-      }
-      .center{
-        border-right: 1px solid #d5dfff;
-        padding-right: 24px;
-       }
-       .center{
-        border-left:1px solid #d5dfff;
-        padding-left: 24px;
-       }
+    }
 
-       .description{
-        margin-top: 32px;
-       }
+    .center {
+      border-right: 1px solid #d5dfff;
+      padding-right: 24px;
+    }
 
-       .About-us{
-        padding-bottom: 48px;
-        padding-top: 48px;
-       }
-       
-       .img-card img{
-        width: 550px;
-       }
-      .img-section-wrapper a:nth-child(3){
-        display: block;
-        
-      }
-     .menu-wrapper{
+    .center {
+      border-left: 1px solid #d5dfff;
+      padding-left: 24px;
+    }
+
+    .description {
+      margin-top: 32px;
+    }
+
+    .About-us {
+      padding-bottom: 48px;
+      padding-top: 48px;
+    }
+
+    .img-card img {
+      width: 550px;
+    }
+
+    .img-section-wrapper a:nth-child(3) {
+      display: block;
+
+    }
+
+    .menu-wrapper {
       min-height: 88px;
       padding: 20px 40px;
-     }
-       .nav-menu{
-        min-height: 88px;
-        padding: 20px 40px;
-       }
-       .lt-img{
-        margin-right: 24px;
-       }
+    }
+
+    .nav-menu {
+      min-height: 88px;
+      padding: 20px 40px;
+    }
+
+    .lt-img {
+      margin-right: 24px;
+    }
+  }
 }
-}
-
-  
-
-
-
